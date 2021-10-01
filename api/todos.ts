@@ -3,7 +3,7 @@ let i = 10;
 
 export default async (req, res) => {
   res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate=59");
-  const data = { adam: i, vini: i * -1 };
+  const data = { adam: i, release: 2, vini: i * -1 };
   await sleep();
   i += 1;
 
